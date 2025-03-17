@@ -1,5 +1,5 @@
 /**
- * 和モダン 居酒屋 - 粋 - スクリプト
+ * Sweet Cake Shop - スイートケーキショップ スクリプト
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -234,11 +234,11 @@ function initContactForm() {
     
     // 問い合わせ種別が変更されたときの処理
     inquiryType.addEventListener('change', function() {
-        if (this.value === 'reservation') {
+        if (this.value === 'cake-order') {
             reservationDetails.style.display = 'block';
             
             // 予約詳細の入力欄を必須にする
-            const inputs = reservationDetails.querySelectorAll('input');
+            const inputs = reservationDetails.querySelectorAll('input, select');
             inputs.forEach(input => {
                 input.setAttribute('required', '');
             });
@@ -246,7 +246,7 @@ function initContactForm() {
             reservationDetails.style.display = 'none';
             
             // 予約詳細の入力欄を必須から外す
-            const inputs = reservationDetails.querySelectorAll('input');
+            const inputs = reservationDetails.querySelectorAll('input, select');
             inputs.forEach(input => {
                 input.removeAttribute('required');
             });
