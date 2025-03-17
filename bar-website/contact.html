@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | NOIR - モダンバー＆ラウンジ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>NOIR</h1>
+                <p class="tagline">Premium Bar & Lounge</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="menu.html">メニュー</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="contact.html" class="active">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="reservation-button">
+                <a href="index.html#reservation" class="btn-reserve">ご予約</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: url('images/interior/contact-header.jpg');">
+            <div class="container">
+                <h1>お問い合わせ</h1>
+                <p>ご質問・ご要望などお気軽にお問い合わせください</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>お問い合わせフォーム</h2>
+                    <div class="separator"></div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info-sidebar">
+                        <div class="contact-info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>住所</h3>
+                                <p>〒150-0043<br>東京都渋谷区道玄坂X-XX-XX<br>〇〇ビル 8F</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>電話番号</h3>
+                                <p>03-XXXX-XXXX<br>（18:00〜翌3:00）</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>メール</h3>
+                                <p>info@noir-bar.jp</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>営業時間</h3>
+                                <p>18:00 - 翌3:00<br>（L.O. 2:30）<br>定休日：月曜日</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-contact">
+                            <h3>ソーシャルメディア</h3>
+                            <div class="social-icons-large">
+                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">お名前 <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">メールアドレス <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">電話番号</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">件名 <span class="required">*</span></label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">プライバシーポリシーに同意する <span class="required">*</span></label>
+                            </div>
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="btn-gold">送信する</button>
+                            </div>
+                        </form>
+                        
+                        <div class="form-note">
+                            <p><span class="required">*</span> は必須項目です</p>
+                            <p>お問い合わせいただいた内容に関しては、通常2営業日以内にご返信いたします。</p>
+                            <p>ご予約に関するお問い合わせは、お電話またはトップページの予約フォームをご利用ください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>よくあるご質問</h2>
+                    <div class="separator"></div>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>ドレスコードはありますか？</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>特に厳格なドレスコードは設けておりませんが、カジュアルすぎる服装（短パン、サンダル、スポーツウェアなど）はご遠慮いただいております。スマートカジュアル以上の服装でのご来店をお願いいたします。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>予約なしでも入店できますか？</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>空席がある場合は予約なしでもご利用いただけますが、特に週末や祝前日は混雑が予想されますので、事前のご予約をおすすめいたします。カウンター席は予約優先となっております。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>貸切パーティーは可能ですか？</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>15名様以上で貸切パーティーが可能です。企業イベント、誕生日パーティー、記念日など、様々なシーンでご利用いただけます。詳細はお電話またはお問い合わせフォームよりお気軽にご相談ください。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>禁煙・喫煙について</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>店内は全面禁煙となっております。喫煙をご希望のお客様は、テラス席（季節限定）をご利用ください。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>駐車場はありますか？</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>専用駐車場のご用意はございません。お車でお越しの際は、近隣のコインパーキングをご利用ください。なお、お酒を召し上がる際は公共交通機関のご利用をお願いいたします。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>ニュースレター登録</h2>
+                        <p>新メニューやイベント情報をいち早くお届けします</p>
+                    </div>
+                    <div class="newsletter-form">
+                        <form>
+                            <input type="email" placeholder="メールアドレス" required>
+                            <button type="submit" class="btn-gold">登録する</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>NOIR</h2>
+                    <p>Premium Bar & Lounge</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>ナビゲーション</h3>
+                        <ul>
+                            <li><a href="index.html">ホーム</a></li>
+                            <li><a href="menu.html">メニュー</a></li>
+                            <li><a href="access.html">アクセス</a></li>
+                            <li><a href="contact.html">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>お問い合わせ</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 東京都渋谷区〇〇町X-XX-XX</p>
+                        <p><i class="fas fa-phone"></i> 03-XXXX-XXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@noir-bar.jp</p>
+                    </div>
+                    <div class="footer-social">
+                        <h3>ソーシャルメディア</h3>
+                        <div class="social-icons">
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NOIR All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+このディレクトリには以下のメニュー画像を配置してください：
+
+カクテル画像：
+1. cocktail1.jpg - Noir Signature（黒いカクテル）（推奨サイズ: 800x600px）
+2. cocktail2.jpg - Golden Hour（金色のカクテル）（推奨サイズ: 800x600px）
+3. cocktail3.jpg - Ruby Elegance（赤いカクテル）（推奨サイズ: 800x600px）
+4. cocktail4.jpg - Smoke & Mirror（スモーク演出のカクテル）（推奨サイズ: 800x600px）
+5. cocktail5.jpg - Old Fashioned（推奨サイズ: 800x600px）
+6. cocktail6.jpg - Manhattan（推奨サイズ: 800x600px）
+7. cocktail7.jpg - Negroni（推奨サイズ: 800x600px）
+8. cocktail8.jpg - Martini（推奨サイズ: 800x600px）
+9. cocktail9.jpg - Spring Blossom（春のカクテル）（推奨サイズ: 800x600px）
+10. cocktail10.jpg - Summer Breeze（夏のカクテル）（推奨サイズ: 800x600px）
+
+ウイスキー画像：
+1. whisky1.jpg - 山崎 12年（推奨サイズ: 800x600px）
+2. whisky2.jpg - 響 17年（推奨サイズ: 800x600px）
+3. whisky3.jpg - マッカラン 18年（推奨サイズ: 800x600px）
+4. whisky4.jpg - ラフロイグ 10年（推奨サイズ: 800x600px）
+
+ワイン画像：
+1. wine1.jpg - 赤ワイン（シャトー・マルゴー）（推奨サイズ: 800x600px）
+2. wine2.jpg - 赤ワイン（オーパス・ワン）（推奨サイズ: 800x600px）
+3. wine3.jpg - 白ワイン（プイィ・フュメ）（推奨サイズ: 800x600px）
+4. wine4.jpg - 白ワイン（シャブリ グラン・クリュ）（推奨サイズ: 800x600px）
+
+フード画像：
+1. food1.jpg - タパスセレクション（推奨サイズ: 800x600px）
+2. food2.jpg - フォアグラのテリーヌ（推奨サイズ: 800x600px）
+3. food3.jpg - トリュフ香るポテトフライ（推奨サイズ: 800x600px）
+4. food4.jpg - 生牡蠣の盛り合わせ（推奨サイズ: 800x600px）
+5. food5.jpg - 和牛のタルタル（推奨サイズ: 800x600px）
+6. food6.jpg - ロブスターのグリル（推奨サイズ: 800x600px）
+
+デザート画像：
+1. dessert1.jpg - ショコラテリーヌ（推奨サイズ: 800x600px）
+2. dessert2.jpg - クレームブリュレ（推奨サイズ: 800x600px）
+
+その他：
+1. menu-header.jpg - メニューページのヘッダー画像（推奨サイズ: 1920x400px）
+
+画像は高品質で、料理やドリンクの質感や色合いが伝わるものを選んでください。
+黒い背景や暗めの照明の中で撮影されたものが、サイトのデザインに合います。
+
+無料の素材サイトから入手する場合は、以下のキーワードで検索すると良いでしょう：
+- premium cocktail
+- luxury whisky
+- gourmet tapas
+- fine dining
+- elegant dessert
+
+注意: 商用利用可能なライセンスの画像を使用してください。
