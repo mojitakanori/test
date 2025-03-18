@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // フォームバリデーション
     initFormValidation();
+    
+    // ハンバーガーメニュー
+    initHamburgerMenu();
 });
 
 /**
@@ -378,6 +381,59 @@ function init360View() {
     panoramaButton.addEventListener('click', function() {
         // 実際のプロジェクトでは、ここで360度ビューを表示するモーダルを開く
         alert('360度ビューは準備中です。実際のプロジェクトでは、ここでパノラマビューアーを表示します。');
+    });
+}
+
+/**
+ * ハンバーガーメニューの初期化と制御
+ */
+function initHamburgerMenu() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('nav');
+    const body = document.body;
+    
+    if (!hamburgerMenu || !nav) return;
+    
+    // オーバーレイ要素の作成
+    const overlay = document.createElement('div');
+    overlay.className = 'nav-overlay';
+    body.appendChild(overlay);
+    
+    // ハンバーガーメニューのクリックイベント
+    hamburgerMenu.addEventListener('click', function() {
+        hamburgerMenu.classList.toggle('active');
+        nav.classList.toggle('active');
+        overlay.classList.toggle('active');
+        body.classList.toggle('menu-open');
+    });
+    
+    // オーバーレイのクリックイベント
+    overlay.addEventListener('click', function() {
+        hamburgerMenu.classList.remove('active');
+        nav.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('menu-open');
+    });
+    
+    // ナビゲーションリンクのクリックイベント
+    const navLinks = nav.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburgerMenu.classList.remove('active');
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+            body.classList.remove('menu-open');
+        });
+    });
+    
+    // ウィンドウリサイズ時の処理
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            hamburgerMenu.classList.remove('active');
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+            body.classList.remove('menu-open');
+        }
     });
 }
 

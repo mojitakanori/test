@@ -1393,6 +1393,70 @@ label {
     background-color: var(--color-medium-gray);
 }
 
+/* ===== ハンバーガーメニュー ===== */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hamburger-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--color-gold);
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.hamburger-icon span:nth-child(1) {
+    top: 0px;
+}
+
+.hamburger-icon span:nth-child(2) {
+    top: 10px;
+}
+
+.hamburger-icon span:nth-child(3) {
+    top: 20px;
+}
+
+.hamburger-menu.active .hamburger-icon span:nth-child(1) {
+    top: 10px;
+    transform: rotate(135deg);
+}
+
+.hamburger-menu.active .hamburger-icon span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+.hamburger-menu.active .hamburger-icon span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-135deg);
+}
+
+/* モバイルナビゲーション用スタイル */
+.nav-social-icons,
+.nav-reservation-button {
+    display: none;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
 /* ===== レスポンシブデザイン ===== */
 @media (max-width: 1200px) {
     .header-container {
@@ -1473,13 +1537,71 @@ label {
     }
     
     .header-container {
-        justify-content: center;
-        text-align: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        order: 3;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--color-dark-gray);
+        z-index: 1000;
+        transition: left 0.3s ease;
+        box-shadow: var(--shadow-large);
+        padding: 5rem 2rem 2rem;
+        overflow-y: auto;
+    }
+    
+    nav.active {
+        left: 0;
     }
     
     nav ul {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul li {
+        margin: 1rem 0;
+        width: 100%;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+    }
+    
+    .nav-social-icons {
+        display: flex;
+        margin: 2rem 0;
         justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .nav-social-icons a {
+        color: var(--color-off-white);
+        font-size: 1.5rem;
+        transition: color var(--transition-fast);
+    }
+    
+    .nav-social-icons a:hover {
+        color: var(--color-gold);
+    }
+    
+    .nav-reservation-button {
+        display: block;
+        margin: 1.5rem 0;
+        text-align: center;
     }
     
     .social-icons {
@@ -1528,6 +1650,22 @@ label {
         flex-direction: column;
         gap: 1rem;
     }
+    
+    /* モバイル時のオーバーレイ */
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+    }
+    
+    .nav-overlay.active {
+        display: block;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1549,5 +1687,18 @@ label {
     
     .gallery {
         grid-template-columns: 1fr;
+    }
+    
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+    
+    .logo .tagline {
+        font-size: 0.7rem;
+    }
+    
+    .reservation-button a {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
     }
 }
