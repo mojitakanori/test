@@ -606,6 +606,17 @@ input:focus, textarea:focus, select:focus {
     border-color: var(--color-gold);
 }
 
+/* 入力欄が空の時にラベルを疑似要素で表示 */
+input[type="date"]:before {
+    content: attr(placeholder);
+    color: #999;
+}
+
+input[type="time"]:before {
+    content: attr(placeholder);
+    color: #999;
+}
+
 textarea {
     resize: vertical;
     min-height: 120px;
@@ -755,7 +766,7 @@ footer {
     background-color: var(--color-dark-gray);
     padding: 1rem 0;
     position: sticky;
-    top: 80px;
+    top: 90px;
     z-index: 100;
     box-shadow: var(--shadow-small);
 }
@@ -1376,6 +1387,7 @@ label {
 
 .newsletter-form button {
     padding: 1rem 2rem;
+    margin: 1rem;
     background-color: var(--color-black);
     color: var(--color-gold);
     border: none;
